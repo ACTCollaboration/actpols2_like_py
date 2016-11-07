@@ -29,6 +29,17 @@ For a working example, see the heavily-commented `example_planck.py`.
 
 You'll need a relatively modern installation of numpy and scipy, since this code uses a lot of array manipulation and Cholesky decomposition to take an inverse.
 
+## Performance
+
+I did some very basic tests for computation time, by calling CLASS (through its Python wrapper), the [Fortran likelihood](https://lambda.gsfc.nasa.gov/product/act/actpol_cmb_lh_get.cfm), and this Python likelihood. I ran this on my MacBook with 10,000 calls each (maybe not the most scientific way to do this).
+```
+CLASS: 29.8s
+
+Python Likelihood: 25.7s
+Fortran Likelihood: 9.7s
+```
+The pure Fortran is about 3x faster, but since CLASS dominates the computation time, the total impact on computation time is probably an additional 30-40%. 
+
 ## Citation
 
 Please reference [Louis et al. 2016](https://arxiv.org/abs/1610.02360) if you use this code. 
