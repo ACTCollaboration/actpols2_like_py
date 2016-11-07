@@ -25,6 +25,10 @@ act.test()
 
 For a working example, see the heavily-commented `example_planck.py`.
 
+## Requirements
+
+You'll need a relatively modern installation of numpy and scipy, since this code uses a lot of array manipulation and Cholesky decomposition to take an inverse.
+
 ## Citation
 
 Please reference [Louis et al. 2016](https://arxiv.org/abs/1610.02360) if you use this code. 
