@@ -18,6 +18,11 @@ With some Cls in lists (default is l=2 to l=6000) and some value of the nuisance
 like = act.loglike(cell_tt, cell_te, cell_ee, yp)
 ```
 
+You can make sure the likelihood code is doing things properly by running the included test function.
+```python
+act.test()
+```
+
 For a working example, see the heavily-commented `example_planck.py`.
 
 ## Citation
