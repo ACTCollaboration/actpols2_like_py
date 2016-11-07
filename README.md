@@ -38,7 +38,7 @@ CLASS: 29.8s
 Python Likelihood: 25.7s
 Fortran Likelihood: 9.7s
 ```
-The pure Fortran is about 3x faster, but since CLASS dominates the computation time, the total impact on computation time is probably an additional 30-40%. 
+The pure Fortran is about 3x faster, but since CLASS dominates the computation time, the total impact on computation time is probably an additional 30-40% if you use this code instead of the Fortran.
 
 ## Citation
 
