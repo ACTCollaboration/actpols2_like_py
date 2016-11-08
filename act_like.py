@@ -200,7 +200,7 @@ class ACTPol_s2:
 		fisher = np.transpose(fisher)
 
 		ptemp = np.dot(fisher, diff_vec)
-		like = np.sum(ptemp * diff_vec)
+		like = np.sum(ptemp * diff_vec) / 2.0
 
 		return like
 
