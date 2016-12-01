@@ -1,4 +1,5 @@
 # actpol s2 likelihood: modify the line below for your installation
-# actpols2_like_py.actdata = '/u/zequnl/Installs/MontePython/montepython/likelihoods/actpol_purepy/data/'
 
-actpols2_like_py.data_directory       = data.path['data']
+actpols2_like_py.actdata = '/u/zequnl/Installs/MontePython/montepython/likelihoods/actpol_purepy/data/'
+
+actpols2_like_py.data_directory       = data.path['data']    # ignore this line

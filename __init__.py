@@ -28,7 +28,8 @@ class actpols2_like_py(Likelihood):
         self.use_nuisance = ['yp']
         self.nuisance = ['yp']
         
-        self.act = act_like.ACTPol_s2("/u/zequnl/Installs/MontePython/montepython/likelihoods/actpol_purepy/data/")
+        print "PATH", self.path
+        self.act = act_like.ACTPol_s2(self.actdata)
 
         # \ell values 2, 3, ... 6000
         self.xx = np.array(range(2,6001))
@@ -45,6 +46,7 @@ class actpols2_like_py(Likelihood):
         	# call CLASS
             cl = self.get_cl(cosmo, 6000)
 
+            # we follow the convention of operating with (l(l+1)/2pi) * C_l
             ee = cl['ee'][2:]
             te = cl['te'][2:]
             tt = cl['tt'][2:]
@@ -53,7 +55,6 @@ class actpols2_like_py(Likelihood):
             ee =  ((self.xx)*(self.xx+1) * ee / (2 * np.pi))
 
             yp = data.mcmc_parameters['yp']['current']
-            # print yp
             lkl = -self.act.loglike(tt, te, ee, yp)
 
         except:
