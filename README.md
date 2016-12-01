@@ -13,7 +13,7 @@ data_dir = '/Users/zequnl/Projects/actpol_py/data/'
 act = act_like.ACTPol_s2(data_dir)
 ```
 
-With some Cls in lists (default is l=2 to l=6000) and some value of the nuisance parameter `yp`, you just call the likelihood function.
+With some Cls in lists (default is l=2 to l=6000) and some value of the nuisance parameter `yp` (use a prior of 0.9 to 1.0 for yp), you just call the likelihood function.
 ```python
 like = act.loglike(cell_tt, cell_te, cell_ee, yp)
 ```
