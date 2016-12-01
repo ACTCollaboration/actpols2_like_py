@@ -8,7 +8,7 @@ from montepython.likelihood_class import Likelihood
 
 import act_like # our likelihood
 
-class actpol_purepy(Likelihood):
+class actpols2_like_py(Likelihood):
 
     # initialization routine
 
