@@ -27,7 +27,7 @@ like = act.loglike(cell_tt, cell_te, cell_ee, 1.0)
 
 print("TT + TE + EE Likelihood")
 print("Expected: 147.747797921459")
-print("Found   : " + '{0:.12f}'.format(like))
+print("Found   : " + '{0:.12f}'.format(2*like))
 
 
 
@@ -43,5 +43,5 @@ print("\nUsing only EE.")
 like = act.loglike(cell_tt, cell_te, cell_ee, 1.0)
 
 print("Expected: 39.178004671647")
-print("Found   : " + '{0:.12f}'.format(like))
+print("Found   : " + '{0:.12f}'.format(2*like))
 
