@@ -41,6 +41,12 @@ Fortran Likelihood: 9.7s
 ```
 The pure Fortran is about 3x faster, but since CLASS dominates the computation time, the total impact on computation time is probably an additional 30-40% if you use this code instead of the Fortran.
 
+
+### Using Monte Python
+
+Please refer to the [Wiki](https://github.com/xzackli/actpols2_like_py/wiki/Using-this-code-with-Monte-Python). 
+
+
 ## Citation
 
 Please reference [Louis et al. 2016](https://arxiv.org/abs/1610.02360) if you use this code. 
