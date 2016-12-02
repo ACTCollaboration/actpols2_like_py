@@ -2,6 +2,8 @@ This is a Python port of software used by the ACTPol collaboration to compute th
 
 ## Usage
 
+### General Use
+
 Put the repository's code in the directory of your Python scripts, and then import it.
 ```python
 import act_like
@@ -26,6 +28,13 @@ act.test()
 
 For a working example, see the heavily-commented `example_planck.py`.
 
+
+
+### Monte Python
+
+Please refer to the [Wiki](https://github.com/xzackli/actpols2_like_py/wiki/Using-this-code-with-Monte-Python). 
+
+
 ## Requirements
 
 You'll need a relatively modern installation of numpy and scipy, since this code uses a lot of array manipulation and Cholesky decomposition to take an inverse.
@@ -40,11 +49,6 @@ Python Likelihood: 25.7s
 Fortran Likelihood: 9.7s
 ```
 The pure Fortran is about 3x faster, but since CLASS dominates the computation time, the total impact on computation time is probably an additional 30-40% if you use this code instead of the Fortran.
-
-
-### Using Monte Python
-
-Please refer to the [Wiki](https://github.com/xzackli/actpols2_like_py/wiki/Using-this-code-with-Monte-Python). 
 
 
 ## Citation
