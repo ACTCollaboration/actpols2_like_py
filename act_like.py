@@ -218,6 +218,6 @@ class ACTPol_s2:
 		like = self.loglike(cell_tt, cell_te, cell_ee, 1.0)
 
 		print("Expected: 147.747797921459")
-		print("Found   : " + '{0:.12f}'.format(like))
+		print("Found   : " + '{0:.12f}'.format(2*like))
 
 
