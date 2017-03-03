@@ -9,9 +9,9 @@ Put the repository's code in the directory of your Python scripts, and then impo
 import act_like
 ```
 
-You then create an instance of the Python class, making sure to specify the directory of the ACTPol data.
+You then create an instance of the Python class, making sure to specify the directory of the ACTPol data. This is the data folder in this repository!
 ```python
-data_dir = '/Users/zequnl/Projects/actpol_py/data/'
+data_dir = '/Users/zequnl/Projects/actpols2_like_py/data/'
 act = act_like.ACTPol_s2(data_dir)
 ```
 
