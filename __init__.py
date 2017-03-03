@@ -21,7 +21,8 @@ class actpols2_like_py(Likelihood):
                 'lensing': 'yes', 
                 'output': 'tCl lCl pCl', 
                 'l_max_scalars': 6000,
-                'modes': 's'
+                'modes': 's',
+                'non linear': 'halofit'
                 })
 
         self.need_update = True
